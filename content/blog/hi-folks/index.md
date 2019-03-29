@@ -1,108 +1,25 @@
 ---
-title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+title: Week 2
+date: "2019-03-29T22:12:03.284Z"
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+The second week of Lambda Labs started out with more planning; this time we were tasked with planning in detail what we would need to do for the entire week. To reach the week's milestone's we'd need to have 80% of our APIs completed on the back end, 80% of the data consumable on the front end, and integrated third-party APIs (in my team's case, Auth0 and Stripe).
 
-## On deer horse aboard tritely yikes and much
+## Summarize the work you did over the course of this sprint, including the challenges you faced, the tools you used, and your accomplishment
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+On Monday of this week my team and I spent the entire day working on our plan for the week. At the end of the day we met with our Section Lead to present our plan. I led the presentation this time around.
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+On Tuesday, Wednesday, and Thursday, I primarily focused on writing the queries and mutations on the back end for each of our project's data types. This was a bit of a challenge at first as my experience with GraphQL prior to Labs was pretty minimal and I had no experience writing mutations for data that had relationships to other data. I struggled at first writing mutations for workouts, for instance, because workouts are linked to a specific schedule ID. Once I figured out how to use the connect feature and the context object it was smooth sailing and I was able to write the back end queries and mutations for several of our types.
 
-When she reached the first hills of the **Italic Mountains**, she had a last
-view back on the skyline of her hometown _Bookmarksgrove_, the headline of
-[Alphabet Village](http://google.com) and the subline of her own road, the Line
-Lane. Pityful a rethoric question ran over her cheek, then she continued her
-way. On her way she met a copy.
+## Pick one of your tickets and provide a detailed analysis of the work you did
 
-### Overlaid the jeepers uselessly much excluding
+https://github.com/labs11-workout/labs11-workout-BE/pull/29
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+This ticket is a bug fix I completed Thursday morning in response to an issue that occurred when one of my teammates tried to query Saved Workouts on the front end. It turns out that I had originally connected the "user" field on Saved Workouts to a userId that was being passed in as an argument in the query. Instead, the userId should have been attached to the context object so that the userId of the currently authenticated user will be connected to the user field on Saved Workouts. That way the query will dynamically return the saved workouts for the authenticated user.
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+## Reflect on your experiences forming a team. 
+### What did you do to help the team solidify as a group? What did you do that you now realize caused friction in this process? What are you doing personally to make sure that everyone on the team, including you, has  a voice in decision making?
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
+I think my team as a whole has done a great job of forming a cohesive unit and making sure that everyone's voice is heard. We spend nearly the entire day each day in a Zoom meeting so that it's easy to ask questions, raise concerns, or update each other on the status of our work (when we've completed a feature, made a pull request, need a review, etc.). Doing things this way allows everyone to be aware of everything that's going on and ensures that we can always speak up about questions/issues in real time. 
 
-### According a funnily until pre-set or arrogant well cheerful
-
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
-
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
-
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rethoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
-
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
-
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
-
-#### Silent delightfully including because before one up barring chameleon
-
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
-
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
-
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
-
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rethoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
-
-###### Slapped cozy a that lightheartedly and far
-
-The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word "and" and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.
+If there were one thing I might suggest we (or I) do differently, it's communicating more about the "nuts and bolts" of our individual work. We've had a few instances where we've discovered bugs or issues later on that, in retrospect, seem obvious and probably could've been caught before the code was merged if we'd all double-checked with each other.

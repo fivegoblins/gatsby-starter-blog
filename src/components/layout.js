@@ -26,7 +26,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            Lambda Labs Blog
           </Link>
         </h1>
       )
